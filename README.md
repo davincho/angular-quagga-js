@@ -1,0 +1,1 @@
+# angular-quagga-js
