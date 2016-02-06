@@ -1,0 +1,26 @@
+{
+  "name": "angular-quagga-js",
+  "version": "1.0.0",
+  "description": "Angular Wrapper for QuaggaJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davincho/angular-quagga-js.git"
+  },
+  "keywords": [
+    "quaggajs",
+    "angularjs"
+  ],
+  "author": "David Madner <david.madner@posteo.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davincho/angular-quagga-js/issues"
+  },
+  "homepage": "https://github.com/davincho/angular-quagga-js#readme",
+  "dependencies": {
+    "quagga": "0.8.3"
+  }
+}
