@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Quagga JS Test</title>
+</head>
+
+<script src="../dist/angular-quagga-js.js"></script>
+
+<script>
+    angular
+        .module('aqj', ['angular-quagga-js'])
+        .controller('Test', function() {
+            this.onProcessed = function(result) {
+                console.log('yes', result);
+            }
+        });
+</script>
+
+<body ng-app="aqj">
+<div ng-controller="Test as t">
+    <dm-quagga-reader type="ean" on-processed="t.onProcessed(result)" />
+</div>
+</body>
+</html>

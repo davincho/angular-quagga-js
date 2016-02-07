@@ -4,6 +4,7 @@
   "description": "Angular Wrapper for QuaggaJS",
   "main": "src/index.js",
   "scripts": {
+    "bundle": "webpack --config webpack.config.js --colors --watch",
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
@@ -23,12 +24,15 @@
   },
   "homepage": "https://github.com/davincho/angular-quagga-js#readme",
   "dependencies": {
+    "angular": "1.5.0",
     "quagga": "0.8.3"
   },
   "devDependencies": {
+    "babel-loader": "6.2.2",
     "commitizen": "2.5.0",
     "cz-conventional-changelog": "1.1.5",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "webpack": "1.12.13"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
