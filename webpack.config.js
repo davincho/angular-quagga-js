@@ -7,12 +7,16 @@ module.exports = {
         filename: './dist/angular-quagga-js.js'
     },
     module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                loader: 'babel',
-                exclude: /node_modules/
-            }
-        ]
+        loaders: [{
+            test: /\.js$/,
+            loader: 'babel',
+            exclude: /node_modules/
+        }, {
+            test: /\.html$/,
+            loader: 'ngtemplate!html'
+        }, {
+            test: /\.css$/,
+            loader: "style-loader!css-loader"
+        }]
     }
 };
